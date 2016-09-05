@@ -1,0 +1,27 @@
+.columns {
+    clear: both;
+    margin-bottom: 15px;
+
+    &__item {
+        width: 50%;
+        margin-bottom: 15px;
+
+        &._l {
+            float: left;
+            padding-right: 10px;
+        }
+
+        &._r {
+            float: left;
+            padding-left: 10px;
+        }
+
+        &._b {
+            width: 100%;
+        }
+
+        &._c {
+            text-align: center;
+        }
+    }
+}

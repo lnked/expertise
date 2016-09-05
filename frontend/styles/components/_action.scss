@@ -1,0 +1,16 @@
+.action {
+    clear: both;
+    height: 35px;
+    color: $c-white;
+    font-family: $font-arial;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 35px;
+    text-align: center;
+    margin-bottom: 35px;
+    
+    &__wrapper {
+        @extend %layout;
+        background-color: #ED4246;
+    }
+}

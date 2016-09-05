@@ -1,0 +1,97 @@
+.button {
+    height: 45px;
+    padding: 0 22px;
+    
+    @extend %button;
+    
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+    font-size: 1.4rem;
+    font-weight: 700;
+    line-height: 45px;
+    text-align: center;
+    text-decoration: none;
+    position: relative;
+    border-radius: 5px;
+    transition: background-color $a-time, color $a-time, box-shadow $a-time, transform $a-time;
+
+    &:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        top: 0;
+        z-index: -1;
+        border-radius: 5px;
+        margin-bottom: -3px;
+        box-shadow: 0 3px 0 rgba(0, 0, 0, 0.4);
+    }
+
+    &:active {
+        transform: translateY(3px);
+    }
+    
+    &._wide {
+        width: 100%;
+        display: block;
+    }
+
+    &__text {
+        line-height: 1.3;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    &._medium {
+        height: 60px;
+        font-size: 1.4em;
+        line-height: 60px;
+    }
+
+    &._large {
+        height: 65px;
+        font-size: 1.4em;
+        line-height: 65px;
+        text-transform: uppercase;
+    }
+
+    &._blue {
+        background-color: #0058bc;
+        background-image: linear-gradient(to top, #0058bc 0%, #007ce5 100%);
+
+        &:hover {
+            background-image: linear-gradient(to top, lighten(#0058bc, 15%) 0%, lighten(#007ce5, 15%) 100%);
+        }
+
+        &:before {
+            background-image: linear-gradient(to top, darken(#0058bc, 15%) 0%, darken(#007ce5, 15%) 100%);
+        }
+    }
+
+    &._red {
+        background-color: #ba0306;
+        background-image: linear-gradient(to top, #ba0306 0%, #db0307 100%);
+
+        &:hover {
+            background-image: linear-gradient(to top, lighten(#ba0306, 15%) 0%, lighten(#db0307, 15%) 100%);
+        }
+
+        &:before {
+            background-image: linear-gradient(to top, #810002 0%, #bc1316 100%);
+        }
+    }
+
+    &.disabled {
+        background: #ccc !important;
+        cursor: not-allowed !important;
+        background: #ccc !important;
+
+        &, &:hover {
+            -webkit-box-shadow: none !important;
+            box-shadow:none !important;
+            background: #ccc !important;
+        }
+    }
+}

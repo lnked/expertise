@@ -1,0 +1,10 @@
+.layout-address {
+    height: 37px;
+    line-height: 37px;
+    text-align: center;
+    background-color: #4ea7f2;
+
+    &__wrapper {
+        @extend %layout;
+    }
+}

@@ -1,0 +1,32 @@
+.images {
+    clear: both;
+    font-size: 0;
+    position: relative;
+    margin-bottom: 30px;
+
+    &__item {
+        width: 50%;
+        text-align: center;
+        display: inline-block;
+        margin-bottom: 20px;
+
+        &._r {
+            padding-left: 20px;
+        }
+    
+        &__image {
+            width: 219px;
+            height: 132px;
+            padding: 8px;
+            cursor: pointer;
+            display: inline-block;
+            background-color: #d2e5ff;
+
+            &__src {
+                max-width: 100%;
+                display: inline-block;
+                vertical-align: middle;
+            }
+        }
+    }
+}

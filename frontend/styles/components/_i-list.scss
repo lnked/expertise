@@ -1,0 +1,43 @@
+.i-list {
+    clear: both;
+    font-size: 0;
+
+    &._letter {}
+    &._documents {}
+
+    &__item {
+        text-align: left;
+        max-width: 102px;
+        margin-bottom: 20px;
+        
+        &._l {
+            clear: both;
+            float: left;
+        }
+
+        &._r {
+            float: right;
+        }
+    }
+
+    &__image {
+        width: 102px;
+        height: 146px;
+        padding: 8px;
+        display: block;
+        line-height: 130px;
+        margin-bottom: 10px;
+        background-color: #d2e5ff;
+
+        &__src {
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+
+    &__title {
+        clear: both;
+        font-size: 1.1rem;
+        line-height: 1.2;
+    }
+}

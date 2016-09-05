@@ -1,0 +1,101 @@
+.layout-header {
+    clear: both;
+    position: relative;
+    height: $header-height;
+    
+    &:before {
+        content: "";
+        opacity: 0.27;
+        display: block;
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 1;
+        background-color: #007ce5;
+        background-image: linear-gradient(to top, #6fb8fb 0%, #30a0ff 99%, #30a0ff 100%);    
+    }
+    
+    &__wrapper {
+        @extend %layout;
+        position: relative;
+        z-index: 2;
+    }
+
+    &__consult {
+        width: 240px;
+        position: absolute;
+        left: 0;
+        top: 15px;
+    }
+
+    &__logo {
+        position: absolute;
+        left: 50%;
+        top: 18px;
+        margin-left: -136px;
+    }
+
+    &__discount {
+        width: 267px;
+        height: 65px;
+        display: block;
+        color: $c-white;
+        font-family: $HelveticaNeueCyr;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 72px;
+        text-align: center;
+        border-radius: 5px;
+        text-decoration: none;
+        text-transform: uppercase;
+        background-color: #ba0306;
+        background-image: linear-gradient(to top, #ba0306 0%, #db0307 100%);
+        position: absolute;
+        top: 52px;
+        right: 10px;
+
+        &:before {
+            content: "";
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            z-index: -1;
+            border-radius: 5px;
+            margin-bottom: -3px;
+            background-image: linear-gradient(to top, #810002 0%, #bc1316 100%);
+            box-shadow: 0 3px 0 rgba(0, 0, 0, 0.4);
+        }
+
+        &:hover {
+            background-image: linear-gradient(to top, lighten(#ba0306, 5%) 0%, lighten(#db0307, 5%) 100%);
+        }
+
+        &:active {
+            margin-top: 3px;
+
+            &:before {
+                margin-bottom: 0;
+            }
+        }
+
+        &__center {
+            line-height: 1.5;
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+}
+
+@media only screen and (max-width: 1280px) {}
+@media only screen and (max-width: 1140px) {}
+@media only screen and (max-width: 1024px) {}
+@media only screen and (max-width: 960px) {}
+@media only screen and (max-width: 768px) {}
+@media only screen and (max-width: 568px) {}
+@media only screen and (max-width: 480px) {}
+@media only screen and (max-width: 375px) {}
+@media only screen and (max-width: 320px) {}

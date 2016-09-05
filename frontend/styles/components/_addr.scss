@@ -1,0 +1,61 @@
+.addr {
+    clear: both;
+    font-size: 1.4rem;
+    line-height: 1.4;
+    padding-top: 10px;
+    padding-left: 15px;
+    position: relative;
+    margin-bottom: 15px;
+
+    &:not(:last-child) {
+        padding-bottom: 15px;
+        border-bottom: 1px dashed #bebebe;    
+    }
+
+    &:before {
+        width: 14px;
+        height: 21px;
+        content: "";
+        left: -2px;
+        top: 0;
+        position: absolute;
+        background: url(/images/map-marker.png) 50% 50% no-repeat;
+    }
+
+    &__container {
+        clear: both;
+    }
+
+    &__street {
+        clear: both;
+        font-size: 1.3rem;
+        margin-bottom: 3px;
+    }
+
+    &__email {
+        clear: both;
+        font-weight: 700;
+        margin-bottom: 3px;
+
+        a {
+            color: #000;
+            text-decoration: underline;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+
+    &__phone {
+        clear: both;
+
+        &__item {
+            color: #000;
+            display: block;
+            font-weight: 700;
+            margin-bottom: 3px;
+            text-decoration: none;
+        }
+    }
+}

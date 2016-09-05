@@ -1,0 +1,69 @@
+.consult {
+    clear: both;
+    font-size: 0;
+
+    &__item {
+        padding: 0 10px;
+        background-repeat: no-repeat;
+        background-position: 100% 50%;
+
+        &._ico-1 {
+            padding-right: 20px;
+            background-image: url(/images/consult-icon-1.png);
+        }
+
+        &._ico-2 {
+            padding-left: 20px;
+            background-image: url(/images/consult-icon-2.png);
+        }
+
+        &__title {
+            clear: both;
+            color: #007ce5;
+            font-size: 1.4rem;
+            line-height: 1.2;
+            font-weight: 700;
+            margin-bottom: 5px;
+        }
+
+        &__phone {
+            clear: both;
+
+            &__tel {
+                color: #0058bc;
+                font-size: 1.8rem;
+                font-weight: 700;
+                text-decoration: none;
+            }
+        }
+    }
+    
+    &._inline {
+        padding: 12px 0;
+        border-top: 1px dashed #bebebe;
+        border-bottom: 1px dashed #bebebe;
+    }
+
+    &._inline &__item {
+        width: 50%;
+        display: inline-block;
+        vertical-align: middle;
+    }
+
+    &._rows &__item {
+        width: 100%;
+        display: block;
+        padding-left: 0;
+        padding-right: 50px;
+        text-align: center;
+
+        &:not(:last-child) {
+            margin-bottom: 12px;
+
+            .consult__item__phone {
+                padding-bottom: 8px;
+                border-bottom: 1px dashed #fff;    
+            }
+        }
+    }
+}

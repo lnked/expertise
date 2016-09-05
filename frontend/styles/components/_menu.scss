@@ -1,0 +1,27 @@
+.menu {
+    clear: both;
+    padding: 0;
+    margin: 0 0 30px;
+    list-style-type: none;
+
+    &__item {
+        clear: both;
+        
+        &:not(:last-child) {
+            margin-bottom: 3px;
+        }
+    }
+
+    &__link {
+        display: block;
+        color: $c-white;
+        font-family: $ArialNarrow;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 1.13;
+        border-radius: 6px;
+        padding: 8px 15px;
+        text-decoration: none;
+        background-color: #007ce5;
+    }
+}

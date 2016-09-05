@@ -1,0 +1,28 @@
+.search {
+    clear: both;
+    line-height: 38px;
+    margin-bottom: 20px;
+
+    &__input {
+        height: 38px;
+        color: #000;
+        border: 0;
+        outline: 0;
+        padding: 0 15px;
+        font-size: 1.4rem;
+        border-radius: 8px;
+        margin-right: 5px;
+        background-color: #d2e5ff;
+    }
+
+    &__button {
+        width: 23px;
+        height: 23px;
+        border: 0;
+        outline: 0;
+        cursor: pointer;
+        display: inline-block;
+        vertical-align: middle;
+        background: url(/images/search-button.png) 50% 50% no-repeat;
+    }
+}

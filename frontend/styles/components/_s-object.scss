@@ -1,0 +1,43 @@
+.s-object {
+    clear: both;
+    
+    &:not(:last-child) {
+        margin-bottom: 20px;
+    }
+
+    &__list {
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px dashed #e6e6e6;
+    }
+
+    &__title {
+        clear: both;
+        color: #000;
+        font-size: 1.6rem;
+        line-height: 1.2;
+        margin-bottom: 15px;
+
+        &__link {
+            color: #007ce5;
+        }
+
+    }
+    
+    &__image {
+        padding: 8px;
+        display: block;
+        background-color: #d2e5ff;
+        margin-bottom: 10px;
+
+        &__src {
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+
+    &__description {
+        font-size: 1.4rem;
+        line-height: 1.3;
+    }
+}
